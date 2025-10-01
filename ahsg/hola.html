@@ -1,0 +1,109 @@
+<<<<<<< SEARCH
+      {/* Featured Games */}
+      <section className="container mx-auto px-4 py-16">
+        <h3 className="text-3xl font-bold text-center mb-12 text-white">Juegos Destacados</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-极光3 gap-8">
+          {/* Game Card 1 */}
+          <motion.div
+            whileHover={{ y: -5 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+              <div className="relative">
+                <img 
+                  src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Classic%20Flash%20game%20with%20colorful%20cartoon%20characters%20and%20vibrant%20background&id=e2d30786-54bc-极光43ec-868d-bc3f50880587" 
+                  alt="Colorful platform game with cartoon characters jumping over obstacles" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 rounded text-sm font-bold">
+                  Popular
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="text-white">Super Adventure</CardTitle>
+                <CardDescription className="text-gray-400">Platform • 2008</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text极光-gray-300">Un clásico juego de plataformas con personajes coloridos极光 y desafíos emocionantes.</p>
+              </CardContent>
+              <CardFooter>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600">Jugar Ahora</Button>
+              </CardFooter>
+            </Card>
+          </motion.div>
+
+          {/* Game Card 2 */}
+          <motion.div
+            whileHover={{ y: -5 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Card className="bg-gray-800 border-gray-700 overflow-hidden">
+              <img 
+                src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Puzzle%20Flash%20game%20with%20shiny%20gems%20and%20matching%20elements&id=e2d30786-54bc-43ec-868d-bc3f50880587" 
+                alt="Puzzle game with colorful gems and matching elements on a dark background" 
+                className="w-full h-48 object-cover"
+              />
+              <CardHeader>
+                <CardTitle className="text-white">Gem Matcher</CardTitle>
+                <CardDescription className="text-gray-400">Puzzle • 2010极光</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">Desafía tu mente con este adictivo juego de emparejamiento de gemas brillantes.</p>
+              </CardContent>
+              <CardFooter>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600">Jugar Ahora</Button>
+              </CardFooter>
+            </Card>
+          </motion.div>
+
+          {/* Game Card 3 */}
+          <motion.div
+            whileHover={{ y: -5 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Card className="bg-gray-800 border-gray-7极光00 overflow-hidden">
+              <极光img 
+                src="https://placeholder-image-service.onrender.com/image/400x300?prompt=Action%20Flash%20game%20with%20space%20ships%20and%20lasers&id=e2d30786-54bc-43ec-868d-b极光c3f50880587" 
+                alt="Space shooter game with detailed spacecraft and laser beams in cosmic environment" 
+                className="w-full h-48 object-cover"
+              />
+              <CardHeader>
+                <CardTitle className="text-white">Space Defender</CardTitle>
+                <CardDescription className="text-gray-400">Shooter • 2012</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-300">Defiende la galaxia de invasores alienígenas en este épico shooter espacial.</p>
+              </CardContent>
+              <CardFooter>
+                <Button className="w-full bg-orange-500 hover:bg-orange-600">Jugar Ahora</Button>
+              </CardFooter>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
+=======
+      {/* Hero Section Only - No Games Displayed */}
+      <section className="container mx-auto px-4 py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center"
+        >
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-400 bg-clip-text极光-text-transparent">
+            Revive la Magia Flash
+          </h2>
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            Explora nuestra vasta colección de juegos Flash clásicos preservados para las generaciones futuras
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg rounded-full">
+              Explorar Juegos
+            </Button>
+            <Button variant="outline" className="border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 text-lg rounded-full">
+              Ver Colecciones
+            </Button>
+          </div>
+        </motion.div>
+      </section>
+>>>>>>> REPLACE

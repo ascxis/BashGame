@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Loader</title>
+    <script src="rufle/ruffle.js"></script>
+    <style>
+        body {
+            background-color: #ff40bd;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        header
+        {
+            margin: 6px;
+            background-color: blue;
+            
+            padding: 6px;
+            
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        #game {
+            margin-top: 20px;
+        }
+        a {
+            color: yellow;
+        }
+    </style>
+</head>
+
+<header>
+    <h1>BASH games</h1>
+</header>
+<body>
+    <h1 id="title">Cargando juego...</h1>
+    <a href="index.html">⬅ Volver al menú</a>
+
+    <div id="game"></div>
+
+    <script>
+        // Obtiene el juego desde la URL (?game=archivo.swf)
+        const params = new URLSearchParams(window.location.search);
+        const game = params.get("game");
+
+        if (game) {
+            document.getElementById("title").innerText = "Jugando: " + game;
+            document.getElementById("game").innerHTML = `
+                <embed src="games/${game}" width="800" height="600">
+            `;
+        } else {
+            document.getElementById("game").innerHTML = "<p>No se seleccionó ningún juego.</p>";
+        }
+    </script>
+</body>
+</html>
