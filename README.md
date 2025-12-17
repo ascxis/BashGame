@@ -1,6 +1,6 @@
-Ciro Sneider Olarte Carvajal
-Andres Felipe Florez
-Ronald Sandoval
+Ciro Sneider Olarte Carvajal,
+Andres Felipe Florez,
+Ronald Sandoval,
 
 --------------------------------------
 
